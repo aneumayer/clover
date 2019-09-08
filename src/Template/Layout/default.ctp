@@ -21,7 +21,7 @@
     <title>
         Kindness Clovers: <?= $this->fetch('title') ?>
     </title>
-    <?= $this->Html->meta('icon') ?>
+    <?= $this->Html->meta('icon', '/img/favicon.ico', array('type' => 'icon')) ?>
     <?= $this->Html->css('bootstrap.min.css') ?>
     <?= $this->Html->css('main.css') ?>
     <?= $this->Html->script('jquery-3.4.1.min.js') ?>

@@ -21,4 +21,4 @@ use Cake\Http\Exception\NotFoundException;
 
 ?>
 
-<p>View the clover patch.</p>
+<p>View the clover patch. <span class="clover"></span></p>
