@@ -24,9 +24,22 @@ class CloverController extends AppController
      */
     public function generate()
     {
+        $clover_url = "https://www.connectionsinc.org/clover";
+        $clover_code = "";
         $this->layout = 'pdf';
         $mpdf = new \Mpdf\Mpdf(['tempDir' => TMP]);
-        $mpdf->WriteHTML('<h1>Hello world!</h1>');
+        // Add the image of the clover
+        $mpdf->WriteHTML('
+            <div style="position: absolute; left:0; right: 0; top: 0; bottom: 0;">
+                <img src="./img/print_clover.png" style="width: 8in; height: 8in; margin: 0;" />
+            </div>
+            <div style="position: absolute; left:0.75in; right: 0; top: 2.55in; bottom: 0;">
+                <p style="font-size: 0.3in">
+                    Please enter your code at:<br>
+                    '.$clover_url.'
+                </p>
+            </div>
+        ');
         $mpdf->Output();
     }
 
