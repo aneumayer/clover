@@ -63,7 +63,7 @@ Router::scope('/', function (RouteBuilder $routes) {
      * to use (in this case, src/Template/Pages/home.ctp)...
      */
     $routes->connect('/', ['controller' => 'Clover', 'action' => 'index', 'index']);
-    $routes->connect('/generate', ['controller' => 'Clover', 'action' => 'generate', 'generate']);
+    $routes->connect('/generate', ['controller' => 'Clover', 'action' => 'generate']);
     $routes->connect('/event', ['controller' => 'Clover', 'action' => 'event', 'event']);
     $routes->connect('/history', ['controller' => 'Clover', 'action' => 'history', 'history']);
     
