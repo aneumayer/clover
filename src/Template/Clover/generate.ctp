@@ -19,6 +19,9 @@ use Cake\Datasource\ConnectionManager;
 use Cake\Error\Debugger;
 use Cake\Http\Exception\NotFoundException;
 
+$mpdf = new \Mpdf\Mpdf(['tempDir' => TMP]);
+$mpdf->WriteHTML('<h1>Hello world!</h1>');
+$mpdf->Output();
+
 ?>
 
-<p>Print a new clover.</p>

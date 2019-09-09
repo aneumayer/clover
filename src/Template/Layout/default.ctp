@@ -39,7 +39,7 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link" href="./generate">Create a new Clover</a>
+                    <a class="nav-link" href="./generate" target="_blank">Create a new Clover</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="./event">Found a Clover</a>
