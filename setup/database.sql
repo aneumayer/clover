@@ -1,7 +1,3 @@
-<?php
-    die();
-?>
-
 CREATE DATABASE clover
     DEFAULT CHARACTER SET utf8
     DEFAULT COLLATE utf8_general_ci
@@ -28,5 +24,6 @@ CREATE TABLE deed (
     FOREIGN KEY (clover_id) REFERENCES clover(id)
 );
 
-CREATE USER 'clover'@'%' IDENTIFIED BY 'clover';
+--- Be sure to change 'new_password' to something else
+CREATE USER 'clover'@'%' IDENTIFIED BY 'new_password';
 GRANT ALL PRIVILEGES ON clover.* TO 'clover'@'%' WITH GRANT OPTION;
