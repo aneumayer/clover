@@ -4,12 +4,13 @@ namespace App\Controller;
 
 use Cake\Core\Configure;
 use Cake\ORM\TableRegistry;
+use Cake\I18n\Time;
 
 class CloverController extends AppController
 {
 
     private $code_length = 4;
-    private $code_options ='123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+    private $code_options ='123456789ABCDEFGHIJKLMNPQRSTUVWXYZ';
     private $code_tries = 10;
 
     /**
@@ -34,6 +35,13 @@ class CloverController extends AppController
         while ($clover_code === false) {
             $clover_code = $this->getCode();
         }
+        // Add the new clover to the database
+        $clovers = TableRegistry::getTableLocator()->get('clover');
+        $clover = $clovers->newEntity();
+        $clover->public_id = $clover_code;
+        $clover->created_at = Time::now();
+        $clovers->save($clover);
+        // Create the PDF content
         $this->layout = 'pdf';
         $mpdf = new \Mpdf\Mpdf(['tempDir' => TMP]);
         // Add the image of the clover
