@@ -12,15 +12,15 @@
  * @since         0.10.0
  * @license       https://opensource.org/licenses/mit-license.php MIT License
  */
+$app_name = "Kindness Clovers";
 ?>
 <!DOCTYPE html>
 <html>
 <head>
     <?= $this->Html->charset() ?>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>
-        Kindness Clovers: <?= $this->fetch('title') ?>
-    </title>
+    <meta name="robots" content="noindex">
+    <title><?= $app_name . ': ' . $this->fetch('title') ?></title>
     <?= $this->Html->meta('icon', '/img/favicon.ico', array('type' => 'icon')) ?>
     <?= $this->Html->css('bootstrap.min.css') ?>
     <?= $this->Html->css('main.css') ?>
@@ -32,7 +32,7 @@
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark">
-        <a href="./" class="navbar-brand"><?= $this->fetch('title') ?></a>
+        <a href="./" class="navbar-brand"><?= $app_name ?></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
