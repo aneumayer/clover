@@ -39,13 +39,10 @@ $app_name = "Kindness Clovers";
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link" href="./generate" target="_blank">Create a new Clover</a>
+                    <a class="nav-link" href="./about">About</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="./event">Found a Clover</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="./history">Check on a Clover</a>
+                    <a class="nav-link" href="./resources">Resources</a>
                 </li>
             </ul>
         </div>

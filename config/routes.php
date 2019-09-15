@@ -66,6 +66,9 @@ Router::scope('/', function (RouteBuilder $routes) {
     $routes->connect('/generate', ['controller' => 'Clover', 'action' => 'generate']);
     $routes->connect('/event', ['controller' => 'Clover', 'action' => 'event', 'event']);
     $routes->connect('/history', ['controller' => 'Clover', 'action' => 'history', 'history']);
+
+    $routes->connect('/about', ['controller' => 'Info', 'action' => 'about', 'about']);
+    $routes->connect('/resources', ['controller' => 'Info', 'action' => 'resources', 'resources']);
     
 
     /**
