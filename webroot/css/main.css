@@ -11,8 +11,10 @@
 body {
     background-color: #E7FFE2;
 }
-.navbar {
-    background-color: #324D12;
+h1, h2, h3, h4, p {
+    color: #00520b;
+}.navbar {
+    background-color: #00520b;
     margin-bottom: 2em;
 }
 .clover {

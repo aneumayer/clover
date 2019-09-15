@@ -1,0 +1,49 @@
+/* fonts */
+/* https://www.jqueryscript.net/text/Dynamic-Word-Tag-Cloud-Plugin-For-jQuery-jQCloud.html */
+
+div.jqcloud {
+  font-family: "Helvetica", "Arial", sans-serif;
+  font-size: 10px;
+  line-height: normal;
+}
+
+div.jqcloud a {
+  font-size: inherit;
+  text-decoration: none;
+}
+
+div.jqcloud span.w10 { font-size: 550%; }
+div.jqcloud span.w9 { font-size: 500%; }
+div.jqcloud span.w8 { font-size: 450%; }
+div.jqcloud span.w7 { font-size: 400%; }
+div.jqcloud span.w6 { font-size: 350%; }
+div.jqcloud span.w5 { font-size: 300%; }
+div.jqcloud span.w4 { font-size: 250%; }
+div.jqcloud span.w3 { font-size: 200%; }
+div.jqcloud span.w2 { font-size: 150%; }
+div.jqcloud span.w1 { font-size: 100%; }
+
+/* colors */
+
+div.jqcloud { color: #55FF00; }
+div.jqcloud a { color: inherit; }
+div.jqcloud a:hover { color: #0efa06; }
+div.jqcloud span.w10 { color: #145A32; }
+div.jqcloud span.w9 { color: #186A3B; }
+div.jqcloud span.w8 { color: #1D8348; }
+div.jqcloud span.w7 { color: #239B56; }
+div.jqcloud span.w6 { color: #28B463; }
+div.jqcloud span.w5 { color: #52BE80; }
+div.jqcloud span.w4 { color: #7DCEA0; }
+div.jqcloud span.w3 { color: #A9DFBF; }
+div.jqcloud span.w2 { color: #D4EFDF; }
+div.jqcloud span.w1 { color: #EAFAF1; }
+
+/* layout */
+
+div.jqcloud {
+  overflow: hidden;
+  position: relative;
+}
+
+div.jqcloud span { padding: 0; }

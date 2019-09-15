@@ -20,7 +20,27 @@ use Cake\Error\Debugger;
 use Cake\Http\Exception\NotFoundException;
 
 // Add the custom scripts for the tag cloud
-//$this->Html->script(['', ''], ['block' => 'script']);
+$this->Html->css('jqcloud.css', ['block' => 'css']);
+$this->Html->script('jqcloud-1.0.4.min.js', ['block' => 'script']);
 ?>
 
-<span class="clover-font">&#97;</span>
+<h1>Welcome to our clover patch!</h1>
+<div id="container" style="width: 600px; height: 400px;"></div>
+<script>
+    var myTags = [
+        <?php 
+            $samlpe_size = 80;
+            for ($i = 1; $i <= $samlpe_size; $i++) {
+                $weight = mt_rand(1, 100);
+                echo "{
+                    text: \"a\",
+                    html: { title: \"Clover\", \"class\": \"clover-font\" },
+                    weight: $weight, 
+                    link: \"./view/public_id/#\"
+                }";
+                if ($i < $samlpe_size) echo ",";
+            }
+        ?>
+    ];
+    $("#container").jQCloud(myTags, {shape: "rectangular"});
+</script>
