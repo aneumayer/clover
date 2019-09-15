@@ -19,6 +19,8 @@ use Cake\Datasource\ConnectionManager;
 use Cake\Error\Debugger;
 use Cake\Http\Exception\NotFoundException;
 
+// Add the custom scripts for the tag cloud
+//$this->Html->script(['', ''], ['block' => 'script']);
 ?>
 
-<p>View the clover patch. <span class="clover"></span></p>
+<span class="clover-font">&#97;</span>
