@@ -37,7 +37,7 @@ $app_name = "Kindness Clovers";
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
+            <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
                     <a class="nav-link" href="./about">About</a>
                 </li>
@@ -45,6 +45,9 @@ $app_name = "Kindness Clovers";
                     <a class="nav-link" href="./resources">Resources</a>
                 </li>
             </ul>
+            <a href="https://www.connectionsinc.org" class="navbar-brand">
+                <img src="./img/connections-logo.png" class="conn-logo">
+            </a>
         </div>
     </nav>
     <?= $this->Flash->render() ?>

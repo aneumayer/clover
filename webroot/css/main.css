@@ -13,10 +13,25 @@ body {
 }
 h1, h2, h3, h4, p {
     color: #00520b;
-}.navbar {
+}
+
+.navbar {
     background-color: #00520b;
     margin-bottom: 2em;
 }
+.conn-logo {
+    height: 1em;
+    width: auto;
+}
+
+.clover-buttons {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+.clover-buttons > .btn {
+    margin: 0.25em;
+}
+
 .clover {
     height: 1em;
     width: 1em;

@@ -26,21 +26,21 @@ $this->Html->script('jqcloud-1.0.4.min.js', ['block' => 'script']);
 
 <center>
     <h1>Welcome to our clover patch!</h1>
-    <br>
-    <p>
+
+    <div class="clover-buttons">
         <a href="./generate" target="_blank" class="btn btn-success">Get a Clover</a>
         <a href="./event"  class="btn btn-success">Found a Clover</a>
         <a href="./history" class="btn btn-success">Check a Clover</a>
-    </p>
-    <br>
+    </div>
+
     <!--- Clover Patch --->
-    <div id="container" style="width: 600px; height: 400px;"></div>
+    <div id="container" style="width: 90%; height: 400px;"></div>
     <script>
         var myTags = [
             <?php 
                 $samlpe_size = 200;
                 for ($i = 1; $i <= $samlpe_size; $i++) {
-                    $weight = mt_rand(1, 10);
+                    $weight = mt_rand(1, 20);
                     echo "{
                         text: \"a\",
                         html: { title: \"Clover\", \"class\": \"clover-font\" },
