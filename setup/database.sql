@@ -8,6 +8,7 @@ USE clover;
 CREATE TABLE clover (
     id INTEGER AUTO_INCREMENT PRIMARY KEY,
     public_id CHAR(4) NOT NULL,
+    event_count INTEGER DEFAULT 0,
     created_at DATETIME NOT NULL,
     UNIQUE INDEX (public_id)
 );

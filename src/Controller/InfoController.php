@@ -16,7 +16,6 @@ class InfoController extends AppController
      */
     public function about()
     {
-
     }
 
     /**
@@ -26,7 +25,5 @@ class InfoController extends AppController
      */
     public function resources()
     {
-
     }
-
 }

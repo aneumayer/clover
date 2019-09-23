@@ -20,7 +20,6 @@ class CloverController extends AppController
      */
     public function index()
     {
-
     }
     
     /**
@@ -72,7 +71,6 @@ class CloverController extends AppController
      */
     public function event()
     {
-
     }
 
     /**
@@ -82,7 +80,6 @@ class CloverController extends AppController
      */
     public function history()
     {
-
     }
 
     /**
@@ -126,5 +123,4 @@ class CloverController extends AppController
         }
         return reset($codes);
     }
-
 }
