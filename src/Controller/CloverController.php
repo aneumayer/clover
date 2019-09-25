@@ -12,6 +12,7 @@ class CloverController extends AppController
     private $code_length = 4;
     private $code_options ='123456789ABCDEFGHIJKLMNPQRSTUVWXYZ';
     private $code_tries = 10;
+    private $clover_url = "https://www.connectionsinc.org/clover";
 
     /**
      * View the clover patch
@@ -21,7 +22,7 @@ class CloverController extends AppController
     public function index()
     {
     }
-    
+
     /**
      * Print a new clover
      *
@@ -29,7 +30,9 @@ class CloverController extends AppController
      */
     public function generate()
     {
-        $clover_url = "https://www.connectionsinc.org/clover";
+        // Turn off the view for this action
+        $this->autoRender = false;
+        // Create a new unique code to use on the clover
         $clover_code = false;
         while ($clover_code === false) {
             $clover_code = $this->getCode();
@@ -52,7 +55,7 @@ class CloverController extends AppController
             <div style="position: absolute; left:0.75in; right: 0; top: 2.55in; bottom: 0;">
                 <p style="font-size: 0.3in">
                     Please enter your code at:<br>
-                    '.$clover_url.'
+                    '.$this->clover_url.'
                 </p>
             </div>
             <div style="position: absolute; left: 2in; right: 0; top: 5in; bottom: 0;">
