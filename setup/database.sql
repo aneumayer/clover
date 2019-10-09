@@ -5,7 +5,7 @@ CREATE DATABASE clover
 
 USE clover;
 
-CREATE TABLE clover (
+CREATE TABLE clovers (
     id INTEGER AUTO_INCREMENT PRIMARY KEY,
     public_id CHAR(4) NOT NULL,
     event_count INTEGER DEFAULT 0,
@@ -13,7 +13,7 @@ CREATE TABLE clover (
     UNIQUE INDEX (public_id)
 );
 
-CREATE TABLE deed (
+CREATE TABLE deeds (
     id INTEGER AUTO_INCREMENT PRIMARY KEY,
     clover_id INTEGER,
     act VARCHAR(1000),

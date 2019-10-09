@@ -38,7 +38,7 @@ class CloverController extends AppController
             $clover_code = $this->getCode();
         }
         // Add the new clover to the database
-        $clovers = TableRegistry::getTableLocator()->get('clover');
+        $clovers = TableRegistry::getTableLocator()->get('clovers');
         $clover = $clovers->newEntity();
         $clover->public_id = $clover_code;
         $clover->created_at = Time::now();
@@ -112,7 +112,7 @@ class CloverController extends AppController
             $codes[] = $this->newCode();
         }
         // Get the codes that are already in use
-        $clovers = TableRegistry::getTableLocator()->get('clover');
+        $clovers = TableRegistry::getTableLocator()->get('clovers');
         $clovers->find()
             ->select(['public_id'])
             ->where(['public_id IN' => $codes]);
